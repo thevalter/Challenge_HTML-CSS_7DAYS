@@ -3,6 +3,11 @@ body{
     padding: 0;
 }
 
+:root{
+    --text-color: #667085;
+    --main-color: #8E2424;
+}
+
 .navbar{
     height: 80px;
     display: flex;
@@ -24,7 +29,7 @@ body{
 .navigation a{
     font-size: 1.2rem;
     margin-right: 2rem;
-    color: #667085;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -44,16 +49,34 @@ body{
     border-radius: 3px;
     margin-right: .5rem;
     background-color: #fff;
-    color: #667085;
+    color: var(--text-color);
 }
 
 .navigation-actions button#signUp{
     padding: 7px;
-    background-color: #8E2424;
+    background-color: var(--main-color);
     color: #fff;
 }
 
 .navigation-actions button:hover{
     cursor: pointer;
     opacity: .7;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 220px;
+}
+
+header span{
+    color: var(--main-color);
+}
+
+header p{
+    color: var(--text-color);
+    font-size: 1.05rem;
+    text-align: center;
 }
