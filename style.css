@@ -63,7 +63,7 @@ body{
     opacity: .7;
 }
 
-header{
+.about{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -71,12 +71,33 @@ header{
     height: 220px;
 }
 
-header span{
+.about span{
     color: var(--main-color);
 }
 
-header p{
+.about p{
     color: var(--text-color);
     font-size: 1.05rem;
     text-align: center;
+}
+
+.cards-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cards{
+    width: 18%;
+}
+
+.cards #title{
+    font-size: 2.2rem;
+    color: var(--main-color);
+}
+.cards #text{
+    color: var(--text-color);
 }
