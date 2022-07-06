@@ -159,3 +159,28 @@ body{
 .vaga-card .content{
     color: var(--text-color);
 }
+
+.depoimentos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.depoimentos #dep-title{
+    color: var(--main-color);
+}
+
+.depoimentos #dep-content{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.depoimentos #dep-prof{
+    color: var(--text-color);
+    margin-top: 0px;
+}
