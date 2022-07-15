@@ -1,0 +1,85 @@
+@media screen and (max-width: 920px) {
+    .metrics {
+      padding: 0 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .metrics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .metric {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+    .metric span {
+      max-width: 280px;
+      text-align: center;
+    }
+  
+    .about-us p {
+      max-width: 70%;
+    }
+  
+    .vaga {
+      max-width: 70%;
+    }
+    
+    .vagas-abertas span.area-principal {
+      max-width: 70%;
+    }
+  
+    .depoimento h2 {
+      max-width: 100%;
+      font-size: 120%;
+    }
+  
+    .sideMenu {
+      display: initial;
+      visibility: visible;
+      position: fixed;
+      right: 4rem;
+      z-index: 10;
+    }
+
+    .sideMenu #open{
+      display: block;
+      transition: all 0.8s;
+    }
+
+    .sideMenu #close{
+      display: none;
+      transition: all 0.8s;
+    }
+  
+    .links {
+      margin: 2rem 0;
+    }
+  
+    .links a {
+      margin-right: 0;
+    }
+  
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -1000px;
+      height: 100vh;
+      background: #F9FAFB;
+      width: 15rem;
+      padding: 2rem;
+      transition: all 2s;
+    }
+  
+    .menu .links, .menu .buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }

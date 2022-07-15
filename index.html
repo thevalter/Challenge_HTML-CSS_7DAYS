@@ -1,106 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
     <title>7DAYS Challenge</title>
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <img src="assets/images/logo.svg" alt="">
-        <div class="navigation">
+    <nav>
+        <img src="assets/images/logo.svg" />
+        <div class="sideMenu">
+            <img id="open" src="./assets/images/openMenu.svg" alt="Menu Icon">
+            <img id="close" src="assets/images/closeMenu.svg" alt="">
+        </div>
+        <div class="menu">
+            <div class="links">
                 <a href="#">Home</a>
                 <a href="#">Produtos</a>
                 <a href="#">Recursos</a>
                 <a href="#">Sobre nós</a>
             </div>
-            <div class="navigation-actions">
+            <div class="buttons">
                 <button>Entrar</button>
-                <button id="signUp">Cadastrar</button>
+                <button class="signUp">Cadastrar</button>
             </div>
+        </div>
     </nav>
 
-    <section class="about">
+    <section class="about-us">
         <span>Sobre nós</span>
-        <h1>Porque somos diferentes?</h1>
-        <p>
-            Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.
-        </p>
+        <h1>Por que somos diferentes?</h1>
+        <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem
+            naquilo que é realmente importante para elas.</p>
     </section>
 
-    <section class="cards-wrapper">
-        <div class="cards">
-            <p id="title">400+</p>
-            <p id="subtitle">Projetos concluídos</p>
-            <p id="text">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+    <section class="metrics">
+        <div class="metric">
+            <h1>400+</h1>
+            <span class="metric-title">Projetos concluídos</span>
+            <span>Nós ajudamos a construir mais de 400 projetos incríveis.</span>
         </div>
-
-        <div class="cards">
-            <p id="title">100+</p>
-            <p id="subtitle">Colaboradores</p>
-            <p id="text">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+        <div class="metric">
+            <h1>100+</h1>
+            <span class="metric-title">Colaboradores</span>
+            <span>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</span>
         </div>
-            
-        <div class="cards">
-            <p id="title">20k</p>
-            <p id="subtitle">Downloads</p>
-            <p id="text">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+        <div class="metric">
+            <h1>20k</h1>
+            <span class="metric-title">Downloads</span>
+            <span>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</span>
         </div>
-
-        <div class="cards">
-            <p id="title">500+</p>
-            <p id="subtitle">Reviews 5 estrelas</p>
-            <p id="text">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+        <div class="metric">
+            <h1>500+</h1>
+            <span class="metric-title">Reviews 5 estrelas</span>
+            <span>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</span>
         </div>
     </section>
 
-    <section class="vagas-info">
+    <section class="talents">
         <span>Vagas abertas!</span>
         <h2>Estamos procurando por talentos</h2>
         <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-        <img src="assets/images/vagas.png" alt="">
+        <img src="assets/images/equipe.png" alt="Nosso time">
     </section>
 
-    <section class="vagas">
-        <div class="vaga-design">
-            <p id="design-title">Designer</p>
-            <div class="vaga-card">
-                <p class="title">Product Designer</p>
-                <p class="content">Full-time &nbsp; &nbsp; Faixa salarial: R$7.000</p>
-            </div>
-            <div class="vaga-card">
-                <p class="title">UX Designer</p>
-                <p class="content">Full-time &nbsp; &nbsp; Faixa salarial: R$6.000</p>
-            </div>
-        </div>
-        <div class="vaga-dev">
-            <p id="dev-title">Desenvolvimento de Software</p>
-            <div class="vaga-card">
-                <p class="title">Desenvolvedor(a) iOS</p>
-                <p class="content">Full-time &nbsp; &nbsp; Faixa salarial: R$8.000</p>
-            </div>
-            <div class="vaga-card">
-                <p class="title">Desenvolvedor(a) Front-end</p>
-                <p class="content">Full-time &nbsp; &nbsp; Faixa salarial: R$7.000</p>
-            </div>
-            <div class="vaga-card">
-                <p class="title">Desenvolvedor(a) Back-end</p>
-                <p class="content">Full-time &nbsp; &nbsp; Faixa salarial: R$8.000</p>
+    <section class="vagas-abertas">
+
+        <span class="area-principal">Design</span>
+
+        <div class="vaga">
+            <span class="titulo-vaga">Product Designer</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$7.000</span>
             </div>
         </div>
+
+        <div class="vaga">
+            <span class="titulo-vaga">UX Designer</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$6.000</span>
+            </div>
+        </div>
+
+        <span class="area-principal">Desenvolvimento de Software</span>
+
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) iOS Pleno</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$8.000</span>
+            </div>
+        </div>
+
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) Front-end Júnior</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$3.500</span>
+            </div>
+        </div>
+
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
+            <div class="informacoes">
+                <span>Estágio</span>
+                <span>Faixa salarial: R$2.000</span>
+            </div>
+        </div>
+
     </section>
 
-    <section class="depoimentos">
-        <span id="dep-title">Veja o que nossos colaboradores falam sobre nós</span>
-        <p id="dep-content">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</p>
-        <img src="assets/images/Avatar.svg" alt="">
-        <p id="dep-name">Júlia Castro</p>
-        <p id="dep-prof">Desenvolvedora Web</p>
+    <section class="depoimento">
+        <span>Veja o que nossos colaboradores falam sobre nós</span>
+        <h2>OptimusTech se importa com todos seus colaboradores, sempre procurando nos dar todo tipo de auxílio
+            possível.</h2>
+        <img src="assets/images/avatar.png">
+        <span class="nome">Júlia Castro</span>
+        <span class="cargo">Desenvolvedora Web</span>
     </section>
-    
+
+    <footer>
+        <h2>Acompanhe as nossas oportunidades</h2>
+        <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
+        <form>
+            <input type="email" placeholder="Seu e-mail">
+            <button class="signUp">Cadastrar</button>
+        </form>
+        <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+    </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/d9feee0e86.js" crossorigin="anonymous"></script>
+
 </html>
